@@ -36,11 +36,14 @@ class _HomeScreenState extends State<HomeScreen> {
           backgroundColor: Colors.black,
         ),
         body: Container(
+          width: MediaQuery.of(context).size.height,
+          //height: MediaQuery.of(context).size.width,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
-                  "assets/images/bck.jpg"), //home screen background image
+                  "assets/images/bck.jpg"), //home screen// background image
               fit: BoxFit.cover,
+
             ),
           ),
           child: Column(
@@ -55,7 +58,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     );
                   } else if (snapshot.data!.length == 0) {
                     return const Center(
-                      child: Text('No Tasks Found'),
+                      child: Text('No Tasks Found',
+                        style: TextStyle(
+                          fontFamily: 'Roboto',
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+
+                      ),
                     );
                   } else {
                     return ListView.builder(
@@ -76,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           margin: const EdgeInsets.all(10),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              color: Colors.cyan.withOpacity(0.7),
+                              color: Colors.white.withOpacity(0.7),
                               boxShadow: [
                                 const BoxShadow(
                                     color: Colors.black54,

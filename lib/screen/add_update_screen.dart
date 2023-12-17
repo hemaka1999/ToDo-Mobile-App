@@ -50,14 +50,14 @@ class _AddUpdateScreenState extends State<AddUpdateScreen> {
     final titleField = TextFormField(
       controller: titleEditingController,
       keyboardType: TextInputType.text,
-      minLines: 2,
+      minLines: 1,
       maxLines: null,
       maxLength: 50,
       textCapitalization: TextCapitalization.sentences,
       decoration: InputDecoration(
           hintText: 'Enter title here',
           filled: true,
-          fillColor: Colors.cyan.withOpacity(0.6),
+          fillColor: Colors.white.withOpacity(0.7),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
           contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15)),
       validator: (value) {
@@ -82,7 +82,7 @@ class _AddUpdateScreenState extends State<AddUpdateScreen> {
       decoration: InputDecoration(
           hintText: 'Enter description here',
           filled: true,
-          fillColor: Colors.cyan.withOpacity(0.6),
+          fillColor: Colors.white.withOpacity(0.7),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
           contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15)),
       // validator: (value) {
@@ -174,7 +174,7 @@ class _AddUpdateScreenState extends State<AddUpdateScreen> {
                   //title textFormField
                   titleField,
                   const SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                   //description textFormField
                   descField,

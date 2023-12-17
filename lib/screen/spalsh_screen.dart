@@ -32,10 +32,10 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Container(
-              width: 200,
-              height: 200,
+              width: MediaQuery.of(context).size.width,
               child: Image.asset(
                   'assets/images/splash_screen.png'), //splash screen image
             ), //
