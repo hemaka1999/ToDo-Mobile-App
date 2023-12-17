@@ -31,7 +31,7 @@ ToDo Mobile Application is built using the following technologies and frameworks
 
 Here are some visual demonstrations of this application:
 
-![Demo 1](/assets/gif/demo.gif)
+![Demo 1](/assets/gif/demo1.gif)
 
 
 ## Installation
